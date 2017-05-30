@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DefenceOfMakers
 {
-    class Program
+    class Game
     {
         static void Main(string[] args)
         {
