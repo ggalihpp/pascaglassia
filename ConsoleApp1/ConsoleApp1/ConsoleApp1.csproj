@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{743263BB-B1F8-4D1A-BDBA-CB20F4916696}</ProjectGuid>
+    <ProjectGuid>{897253A2-9E67-4BF0-8C07-9F7CA781ACE6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DefenceOfMakers</RootNamespace>
-    <AssemblyName>DefenceOfMakers</AssemblyName>
+    <RootNamespace>ConsoleApp1</RootNamespace>
+    <AssemblyName>ConsoleApp1</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,16 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DoMException.cs" />
-    <Compile Include="Invader.cs" />
-    <Compile Include="Map.cs" />
-    <Compile Include="MapLocation.cs" />
-    <Compile Include="Path.cs" />
-    <Compile Include="Player.cs" />
-    <Compile Include="Game.cs" />
-    <Compile Include="Point.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tower.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
