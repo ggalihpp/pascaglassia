@@ -9,7 +9,13 @@ namespace DefenceOfMakers
     class Tower
     {
         private readonly MapLocation _location;
+        private static Random randomGenerator = new Random();
         const int _range = 1;
+        const int _power = 1;
+        private const double _accuracy = 0.75;
+
+       
+
         public Tower(MapLocation Location)
         {
             _location = Location;
@@ -21,7 +27,18 @@ namespace DefenceOfMakers
             {
                 if (satuInvader.IsActive && _location.inRangeOf(satuInvader.Location, 1))
                 {
-                    satuInvader.decreaseHealth(1);
+                    if (randomGenerator.NextDouble() < _accuracy)
+                    {
+                        satuInvader.decreaseHealth(_power);
+                        Console.WriteLine("invader shooted succesfully");
+
+                        if (satuInvader.IsNeutralized)
+                            Console.WriteLine("invader neutralized");
+                    }
+                    else
+                    {
+                        Console.WriteLine("invader shooted missed");
+                    }
                     break;
                 }
             }

@@ -38,8 +38,8 @@ namespace DefenceOfMakers
             {
                     new Invader(path),
                     new Invader(path),
-                    new Invader(path),
-                    new Invader(path),
+                    //new Invader(path),
+                    //new Invader(path),
                    
                     
 
