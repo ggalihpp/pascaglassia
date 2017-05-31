@@ -18,12 +18,19 @@ namespace ConsoleApp1
                 if(angka1[i] %2 == 1)
                 {
                     int temp = angka1[i];
-                    int[] temp2 = new int[];
-                    count++;
-                   // Console.WriteLine(temp);
                     
-                    Array.Sort(temp2);
-                    Console.WriteLine(temp2[0]);
+                    List<int> temp2 = new List<int>();
+
+                    temp2.Add(temp);
+                    count++;
+                    // Console.WriteLine(temp);
+                    temp2.Sort();   
+                    foreach (int value in temp2)
+                    {
+                        Console.WriteLine(value);
+                    }
+
+                    
                 }
                 
                 

@@ -9,6 +9,13 @@ namespace DefenceOfMakers
     class Path
     {
         private readonly MapLocation[] _path;
+        public int Length
+        {
+            get
+            {
+               return _path.Length;
+            }
+        }
 
         public Path(MapLocation[] path)
         {

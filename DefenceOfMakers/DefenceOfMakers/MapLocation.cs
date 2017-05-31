@@ -13,5 +13,10 @@ namespace DefenceOfMakers
             if (!map.OnMap(this))
                 throw new OutOfBondException();
         }
+
+        public bool inRangeOf(MapLocation mapLocation, int range)
+        {
+            return distanceTo(mapLocation) <= range;
+        }
     }
 }

@@ -30,5 +30,10 @@ namespace DefenceOfMakers
 
             return (int)akar;
         }
+        
+        public int distanceTo(Point point)
+        {
+            return distanceTo(point.X, point.Y);
+        }
     }
 }
