@@ -10,7 +10,8 @@ namespace DefenceOfMakers
     {
         private readonly Path _path;
         private int _pathStep = 0;
-        public int Health { get; private set; } = 2;
+        protected virtual int stepSize { get; } = 1;
+        public virtual int Health { get; protected set; } = 5;
 
         public MapLocation Location
         {
@@ -26,12 +27,12 @@ namespace DefenceOfMakers
             _path = path;
         }
 
-        public void Move()
+        public virtual void Move()
         {
-            _pathStep += 1;
+            _pathStep += stepSize;
         }
 
-        public void decreaseHealth(int factor)
+        public virtual void decreaseHealth(int factor)
         {
             Health -= factor;
         }
@@ -56,8 +57,8 @@ namespace DefenceOfMakers
         {
             get
             {
-                return !(IsNeutralized || HasScored);
+                    return !(IsNeutralized || HasScored);
+                }
             }
         }
     }
-}

@@ -11,7 +11,7 @@ namespace DefenceOfMakers
         private readonly MapLocation _location;
         private static Random randomGenerator = new Random();
         const int _range = 1;
-        const int _power = 1;
+        const int _power = 3;
         private const double _accuracy = 0.75;
 
        
